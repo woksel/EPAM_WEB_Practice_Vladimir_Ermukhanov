@@ -1,17 +1,27 @@
 @import "~@styles/fonts.sass";
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  font-family: "SansPro";
-}
+$bgc: #e4e4e4
+$default_font: "SansPro"
 
-.container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
+%df_center
+  display: flex
+  justify-content: center
+  align-items: center
+
+body 
+  margin: 0
+  padding: 0
+  width: 100vw
+  height: 100vh
+  font-family: $default_font
+  background-color: $bgc
+
+
+.container 
+  width: 100%
+  height: 100%
+  @extend %df_center
+
+  h1
+    color: rgba(#252525, 1)
+  
