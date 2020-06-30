@@ -1,0 +1,19 @@
+{
+  "name": "epam_web_practice_vladimir_ermukhanov",
+  "version": "1.0.0",
+  "description": "for practice",
+  "main": "src/index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov.git"
+  },
+  "author": "Vladimir Ermukhanov <ermuhanoff@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov/issues"
+  },
+  "homepage": "https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov#readme"
+}
