@@ -1,8 +1,7 @@
-// import Html from "html-webpack-plugin";
-// import Clean from "clean-webpack-plugin";
-// import path from "path";
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const {
+  CleanWebpackPlugin
+} = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -18,7 +17,7 @@ module.exports = {
     },
   },
   output: {
-    filename: "[contenthash].js",
+    filename: "[name].[hash].js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
@@ -28,8 +27,7 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.sass$/,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
