@@ -1,27 +1,41 @@
-import Html from "html-webpack-plugin";
-import Clean from "clean-webpack-plugin";
-import path from "path";
+// import Html from "html-webpack-plugin";
+// import Clean from "clean-webpack-plugin";
+// import path from "path";
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
   mode: "development",
-  entry: "src",
+  entry: "./index.js",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      "@assets": path.resolve(__dirname, "src", "assets"),
+      "@fonts": path.resolve(__dirname, "src", "assets", "fonts"),
+      "@styles": path.resolve(__dirname, "src", "styles"),
+    },
+  },
   output: {
     filename: "[contenthash].js",
     path: path.resolve(__dirname, "dist"),
   },
   plugins: [
-    new Html({
-      template: "index.html",
+    new HtmlWebpackPlugin({
+      template: "./index.html",
     }),
-    new Clean(),
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
       {
-        test: /\.css$/,
-        //use: ["css-loader", "style-loader"],
-        use: ["style-loader"],
+        test: /\.sass$/,
+        use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(ttf|otf|woff|woff2)$/,
+        use: ["file-loader"],
       },
     ],
   },
