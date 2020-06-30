@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "for practice",
   "main": "src/index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov.git"
@@ -15,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov/issues"
   },
-  "homepage": "https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov#readme"
+  "homepage": "https://github.com/woksel/EPAM_WEB_Practice_Vladimir_Ermukhanov#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
 }
