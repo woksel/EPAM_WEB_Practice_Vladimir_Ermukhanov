@@ -2,7 +2,7 @@
 
 ### contacts:
 
-- **<ermihanoff@gmail.com>**
+- **<ermuhanoff@gmail.com>**
 - **[VK](https://vk.com/woksel "VK link")**
 
 ---
