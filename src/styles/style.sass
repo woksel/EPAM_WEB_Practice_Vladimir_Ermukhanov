@@ -1,12 +1,21 @@
 @import "~@styles/fonts.sass";
 
-$bgc: #e4e4e4
+$bgc: #ffffff
 $default_font: "SansPro"
+$menu_color: #757575
+$menu_active_color: #009984
+$color: #202020
+$menu_font_size: 1.2em
+$menu_font_size_text: 1em
 
-%df_center
+@mixin df($jc: center, $ai: center, $direction: row)
   display: flex
-  justify-content: center
-  align-items: center
+  flex-direction: $direction
+  justify-content: $jc
+  align-items: $ai
+
+*
+  box-sizing: border-box
 
 body 
   margin: 0
@@ -20,8 +29,50 @@ body
 .container 
   width: 100%
   height: 100%
-  @extend %df_center
+  +df(space-between, center, column)
 
-  h1
-    color: rgba(#252525, 1)
+.content
+  width: 100%
+  height: 100%
+  +df()
+  color: $color
+  &__text
+    font-size: 1.5em
+  
+.menu
+  width: 100%
+  height: max-content
+  +df(space-between)
+  padding: 10px 15px
+  box-shadow: 0px 10px 20px 0px rgba(#000000, 0.5)
+
+  &__item
+    color: $menu_color
+  &__item::before
+    +df()
+    margin-bottom: 5px
+    font-family: "Awesome"
+    font-size: $menu_font_size
+    
+  &__item::after
+    font-size: $menu_font_size_text
+      
+  .list::before
+    content: '\f0c9'
+  .list::after
+    content: 'All voices'
+  .mic::before
+    content: '\f130'
+  .mic::after
+    content: 'Microphone'
+  .stream::before
+    content: '\f8dd'
+  .stream::after
+    content: 'Stream' 
+    
+  &__item.active
+    color: $menu_active_color
+
+
+
   

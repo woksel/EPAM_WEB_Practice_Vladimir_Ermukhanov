@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass":
-/*!**********************************************************************************************************!*\
-  !*** ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass ***!
-  \**********************************************************************************************************/
+/***/ "../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass":
+/*!*********************************************************************************************************************************************!*\
+  !*** ../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass ***!
+  \*********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"../node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! @fonts/SourceSansPro-Regular.ttf */ \"./assets/fonts/SourceSansPro-Regular.ttf\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"SansPro\\\";\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format(\\\"truetype\\\"); }\\n\\n.container {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center; }\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  width: 100vw;\\n  height: 100vh;\\n  font-family: \\\"SansPro\\\";\\n  background-color: #e4e4e4; }\\n\\n.container {\\n  width: 100%;\\n  height: 100%; }\\n  .container h1 {\\n    color: #252525; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./styles/style.sass?../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\nvar ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ \"../node_modules/css-loader/dist/runtime/getUrl.js\");\nvar ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! @fonts/Sanspro/ssp-regular-400.ttf */ \"./assets/fonts/Sanspro/ssp-regular-400.ttf\");\nvar ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__(/*! @fonts/Awesome/fa-regular-400.eot */ \"./assets/fonts/Awesome/fa-regular-400.eot\");\nvar ___CSS_LOADER_URL_IMPORT_2___ = __webpack_require__(/*! @fonts/Awesome/fa-regular-400.woff2 */ \"./assets/fonts/Awesome/fa-regular-400.woff2\");\nvar ___CSS_LOADER_URL_IMPORT_3___ = __webpack_require__(/*! @fonts/Awesome/fa-regular-400.woff */ \"./assets/fonts/Awesome/fa-regular-400.woff\");\nvar ___CSS_LOADER_URL_IMPORT_4___ = __webpack_require__(/*! @fonts/Awesome/fa-regular-400.ttf */ \"./assets/fonts/Awesome/fa-regular-400.ttf\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);\nvar ___CSS_LOADER_URL_REPLACEMENT_2___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_2___);\nvar ___CSS_LOADER_URL_REPLACEMENT_3___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_3___);\nvar ___CSS_LOADER_URL_REPLACEMENT_4___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_4___);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"SansPro\\\";\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_0___ + \") format(\\\"truetype\\\"); }\\n\\n@font-face {\\n  font-family: 'Awesome';\\n  font-style: normal;\\n  font-weight: 400;\\n  font-display: block;\\n  src: url(\" + ___CSS_LOADER_URL_REPLACEMENT_1___ + \") format(\\\"embedded-opentype\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_2___ + \") format(\\\"woff2\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_3___ + \") format(\\\"woff\\\"), url(\" + ___CSS_LOADER_URL_REPLACEMENT_4___ + \") format(\\\"truetype\\\"); }\\n\\n* {\\n  box-sizing: border-box; }\\n\\nbody {\\n  margin: 0;\\n  padding: 0;\\n  width: 100vw;\\n  height: 100vh;\\n  font-family: \\\"SansPro\\\";\\n  background-color: #ffffff; }\\n\\n.container {\\n  width: 100%;\\n  height: 100%;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: space-between;\\n  align-items: center; }\\n\\n.content {\\n  width: 100%;\\n  height: 100%;\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: center;\\n  align-items: center;\\n  color: #202020; }\\n  .content__text {\\n    font-size: 1.5em; }\\n\\n.menu {\\n  width: 100%;\\n  height: max-content;\\n  display: flex;\\n  flex-direction: row;\\n  justify-content: space-between;\\n  align-items: center;\\n  padding: 10px 15px;\\n  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5); }\\n  .menu__item {\\n    color: #757575; }\\n  .menu__item::before {\\n    display: flex;\\n    flex-direction: row;\\n    justify-content: center;\\n    align-items: center;\\n    margin-bottom: 5px;\\n    font-family: \\\"Awesome\\\";\\n    font-size: 1.2em; }\\n  .menu__item::after {\\n    font-size: 1em; }\\n  .menu .list::before {\\n    content: '\\\\f0c9'; }\\n  .menu .list::after {\\n    content: 'All voices'; }\\n  .menu .mic::before {\\n    content: '\\\\f130'; }\\n  .menu .mic::after {\\n    content: 'Microphone'; }\\n  .menu .stream::before {\\n    content: '\\\\f8dd'; }\\n  .menu .stream::after {\\n    content: 'Stream'; }\\n  .menu__item.active {\\n    color: #009984; }\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./styles/style.sass?../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader!../node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -133,15 +133,63 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./assets/fonts/SourceSansPro-Regular.ttf":
-/*!************************************************!*\
-  !*** ./assets/fonts/SourceSansPro-Regular.ttf ***!
-  \************************************************/
+/***/ "./assets/fonts/Awesome/fa-regular-400.eot":
+/*!*************************************************!*\
+  !*** ./assets/fonts/Awesome/fa-regular-400.eot ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"efa76f8326aa5cee3bdd07d37e2a63d2.ttf\");\n\n//# sourceURL=webpack:///./assets/fonts/SourceSansPro-Regular.ttf?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/fa-regular-400.eot\");\n\n//# sourceURL=webpack:///./assets/fonts/Awesome/fa-regular-400.eot?");
+
+/***/ }),
+
+/***/ "./assets/fonts/Awesome/fa-regular-400.ttf":
+/*!*************************************************!*\
+  !*** ./assets/fonts/Awesome/fa-regular-400.ttf ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/fa-regular-400.ttf\");\n\n//# sourceURL=webpack:///./assets/fonts/Awesome/fa-regular-400.ttf?");
+
+/***/ }),
+
+/***/ "./assets/fonts/Awesome/fa-regular-400.woff":
+/*!**************************************************!*\
+  !*** ./assets/fonts/Awesome/fa-regular-400.woff ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/fa-regular-400.woff\");\n\n//# sourceURL=webpack:///./assets/fonts/Awesome/fa-regular-400.woff?");
+
+/***/ }),
+
+/***/ "./assets/fonts/Awesome/fa-regular-400.woff2":
+/*!***************************************************!*\
+  !*** ./assets/fonts/Awesome/fa-regular-400.woff2 ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/fa-regular-400.woff2\");\n\n//# sourceURL=webpack:///./assets/fonts/Awesome/fa-regular-400.woff2?");
+
+/***/ }),
+
+/***/ "./assets/fonts/Sanspro/ssp-regular-400.ttf":
+/*!**************************************************!*\
+  !*** ./assets/fonts/Sanspro/ssp-regular-400.ttf ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"fonts/ssp-regular-400.ttf\");\n\n//# sourceURL=webpack:///./assets/fonts/Sanspro/ssp-regular-400.ttf?");
 
 /***/ }),
 
@@ -153,7 +201,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/style.sass */ \"./styles/style.sass\");\n/* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_sass__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nfunction main() {\r\n    console.log(\"Hello world\");\r\n}\r\nwindow.onload = main;\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @styles/style.sass */ \"./styles/style.sass\");\n/* harmony import */ var _styles_style_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_style_sass__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nfunction main() {\r\n    addListener('.menu', 'click', onMenuItemClick);\r\n}\r\n\r\nfunction onMenuItemClick(e) {\r\n    const target = e.target;\r\n\r\n    if (!target.classList.contains('menu__item')) return;\r\n\r\n    const other = target.parentElement.children;\r\n    const content = document.querySelector('.content__text');\r\n\r\n    [].forEach.call(other, i => i.classList.remove('active'));\r\n\r\n    target.classList.add('active');\r\n    content.innerHTML = `Active: ${target.getAttribute('mode')}`;\r\n\r\n}\r\n\r\nfunction addListener(el, t, cb) {\r\n    const current = typeof el === 'string' ? document.querySelector(el) : el\r\n\r\n    current.addEventListener(t, cb);\r\n}\r\n\r\nwindow.onload = main;\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -164,7 +212,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./style.sass */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./styles/style.sass?");
+eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/resolve-url-loader!../../node_modules/sass-loader/dist/cjs.js!./style.sass */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./styles/style.sass\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./styles/style.sass?");
 
 /***/ })
 

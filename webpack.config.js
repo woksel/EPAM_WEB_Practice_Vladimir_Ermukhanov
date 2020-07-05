@@ -29,11 +29,17 @@ module.exports = {
   module: {
     rules: [{
         test: /\.sass$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        use: ["style-loader", "css-loader", 'resolve-url-loader', "sass-loader"],
       },
       {
-        test: /\.(ttf|otf|woff|woff2)$/,
-        use: ["file-loader"],
+        test: /\.(eot|ttf|otf|woff|woff2|svg)$/,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'fonts/'
+          }
+        }]
       },
     ],
   },
