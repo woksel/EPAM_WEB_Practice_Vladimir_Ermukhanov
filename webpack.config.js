@@ -1,7 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const {
-  CleanWebpackPlugin
-} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -27,19 +25,38 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   module: {
-    rules: [{
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+            plugins: ["@babel/plugin-proposal-class-properties"],
+          },
+        },
+      },
+      {
         test: /\.sass$/,
-        use: ["style-loader", "css-loader", 'resolve-url-loader', "sass-loader"],
+        use: [
+          "style-loader",
+          "css-loader",
+          "resolve-url-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.(eot|ttf|otf|woff|woff2|svg)$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/'
-          }
-        }]
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "fonts/",
+            },
+          },
+        ],
       },
     ],
   },

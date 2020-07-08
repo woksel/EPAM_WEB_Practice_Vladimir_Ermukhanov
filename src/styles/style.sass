@@ -32,12 +32,27 @@ body
   +df(space-between, center, column)
 
 .content
+  position: relative
   width: 100%
   height: 100%
-  +df()
+  padding: 10px
+  +df(flex-start, center, column)
+  overflow-y: hidden
   color: $color
   &__text
     font-size: 1.5em
+  .voice__item
+    width: 100%
+    height: 100%
+    +df(space-between)
+    padding: 10px
+    margin-bottom: 5px
+    font-size: 1.4em
+    border-bottom: 1px solid $color
+    &:hover
+      background-color: rgba($menu_active_color, 0.5)
+  & :last-child
+    border-bottom: none
   
 .menu
   width: 100%
@@ -56,6 +71,20 @@ body
     
   &__item::after
     font-size: $menu_font_size_text
+
+  .list
+    position: relative
+    .voice-counter
+      position: absolute
+      +df()
+      width: 17px
+      height: 17px
+      top: -5px
+      right: 10px
+      border-radius: 50%
+      color: #fff
+      font-size: 0.7em
+      background-color: $menu_active_color
       
   .list::before
     content: '\f0c9'
