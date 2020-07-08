@@ -15,4 +15,7 @@ export default class Client {
   static get(cb) {
     Client.#socket.on("audioMessage", cb);
   }
+  static user(cb) {
+    Client.#socket.on("user", cb);
+  }
 }

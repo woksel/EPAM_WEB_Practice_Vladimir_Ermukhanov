@@ -20,6 +20,9 @@ function main() {
       );
     }
   });
+  Client.user((data) => {
+    console.log(data);
+  });
 }
 
 function onMenuItemClick(e) {
