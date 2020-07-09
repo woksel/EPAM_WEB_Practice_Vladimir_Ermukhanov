@@ -1,5 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const TerserWebpakPlugin = require("terser-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -18,11 +21,23 @@ module.exports = {
     filename: "[name].[hash].js",
     path: path.resolve(__dirname, "dist"),
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    },
+    minimizer: [new OptimizeCssAssetsPlugin(), new TerserWebpakPlugin()], //production
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./index.html",
+      minify: {
+        collapseWhitespace: true, //production
+      },
     }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "[name].[hash].css",
+    }),
   ],
   module: {
     rules: [
@@ -40,7 +55,7 @@ module.exports = {
       {
         test: /\.sass$/,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "resolve-url-loader",
           "sass-loader",

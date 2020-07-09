@@ -2,7 +2,6 @@
   "name": "epam_web_practice_vladimir_ermukhanov",
   "version": "1.0.0",
   "description": "for practice",
-  "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "dev": "webpack --mode development",
@@ -28,11 +27,15 @@
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.2",
     "socket.io-client": "^2.3.0",
+    "socket.io-parser": "^3.4.1",
     "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.6",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"

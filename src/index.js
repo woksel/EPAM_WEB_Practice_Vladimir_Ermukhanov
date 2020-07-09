@@ -60,7 +60,6 @@ function onModeItemClick(e) {
     }
     if (target.classList.contains("recording"))
       Radio.record_stop().then((r) => {
-        //Radio.play(Radio.to_blob(r));
         Client.send(r);
         content.querySelector(".content__text").classList.remove("recording");
       });
