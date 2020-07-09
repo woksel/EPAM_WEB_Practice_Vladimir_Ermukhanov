@@ -6,7 +6,7 @@ export default class Client {
     Client.#origin = new URL(url);
     Client.#socket = io(Client.#origin.href, { reconnection: true });
   }
-  static getAll() {
+  static get_all() {
     return fetch(Client.#origin.href + "voices");
   }
   static send(blob) {
@@ -15,7 +15,7 @@ export default class Client {
   static get(cb) {
     Client.#socket.on("audioMessage", cb);
   }
-  static user(cb) {
+  static users(cb) {
     Client.#socket.on("user", cb);
   }
 }

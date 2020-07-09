@@ -5,7 +5,7 @@ export default class Loader {
     Loader.#className
   }"><div></div><div></div><div></div><div></div></div></div>`;
   static #context = document.body;
-  static setContext(context) {
+  static set_context(context) {
     Loader.#context = context;
   }
   static play() {
