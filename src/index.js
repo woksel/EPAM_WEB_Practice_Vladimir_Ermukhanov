@@ -46,6 +46,7 @@ function onMenuItemClick(e) {
 }
 
 function onModeItemClick(e) {
+  Client.abort();
   const target = onMenuItemClick(e);
   const content = document.querySelector(".content");
   const mode = target.getAttribute("mode");
@@ -120,7 +121,8 @@ function onAllVoicesClick(e) {
       counter?.remove();
       Radio.add_voices(json);
       addListener(".voice__tool", "click", onVoiceToolClick);
-    });
+    })
+    .catch((e) => console.log(e));
 }
 
 function onVoiceToolClick(e) {
