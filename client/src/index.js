@@ -6,7 +6,7 @@ import Radio from "@/radio.js";
 function main() {
   addListener(".mode-switch", "click", onModeItemClick);
   addListener(".list", "click", onAllVoicesClick);
-  Client.connect("https://voicy-speaker.herokuapp.com");
+  Client.connect("localhost:3000");
   Client.get(onData);
   Client.users((data) => {
     console.log(data);

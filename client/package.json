@@ -1,7 +1,7 @@
 {
   "name": "epam_web_practice_vladimir_ermukhanov",
   "version": "1.0.0",
-  "description": "for practice",
+  "description": "for practice / client",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "dev": "webpack --mode development",
