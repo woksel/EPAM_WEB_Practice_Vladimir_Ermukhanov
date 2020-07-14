@@ -1,4 +1,5 @@
 import io from "socket.io-client";
+import path from "path";
 export default class Client {
   static #origin = null;
   static #socket = null;
@@ -6,12 +7,13 @@ export default class Client {
   static connect(url) {
     Client.#origin = new URL(url);
     Client.#socket = io(Client.#origin.href, { reconnection: true });
+    Client.#controller = new AbortController();
   }
   static abort() {
     Client.#controller.abort();
+    Client.#controller = new AbortController();
   }
   static get_all() {
-    Client.#controller = new AbortController();
     return fetch(Client.#origin.href + "voices", {
       signal: Client.#controller.signal,
     });
